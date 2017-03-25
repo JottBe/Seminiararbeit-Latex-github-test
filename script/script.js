@@ -6,8 +6,10 @@ function berechnenWartRent(pws, ptver, kt) {
 //Pruefung Zahlenwerte
 if (kt==="0") {
   alert('Fehler. Zahlenwert Tagessatz darf nicht 0 betragen!');
+  exit();
 } else if (ptver==="0") {
   alert('Fehler. Zahlenwert verbrauchte Tage darf nicht 0 betragen');
+  exit();
 } else {
   //Berechnung der Werte
   ergebnis = pws/3/ptver/kt;
