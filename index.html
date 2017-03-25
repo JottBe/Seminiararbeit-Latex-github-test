@@ -1,0 +1,44 @@
+<html>
+<head>
+  <title>Wartungsrentabilitaetsrechner</title>
+  <link rel="stylesheet" href="css\style.css"/>
+</head>
+<body>
+  <h1>Wartungsrentabilitaetsrechner</h1>
+  <table>
+    <!-- Eingabebereich -->
+    <td />
+      <p>Wartungssumme:</p>
+    <td />
+      <input type="text" id="wartungssumme"/>
+    <tr /><td />
+      <p>Verbrauchte Tage:</p>
+    <td />
+      <input type="text" id="verbrauchteTage"/>
+    <tr /><td />
+      <p>Tagessatz:</p>
+    <td />
+      <input type="text" id="tagessatz"/>
+    <!-- Ausgabebereich -->
+    <tr /><td />
+      <p>Ergebnis PS:</p>
+    <td />
+      <input type="text" id="ergebnis" value=""/>
+    <td />
+      <p id="meldung"></p>
+    <tr /><td />
+      <p>Ergebnis Gesamt</p>
+    <td />
+      <input type="text" id="ergebnisGesamt" value=""/>
+    <td />
+    <p id="meldungGesamt"></p>
+    <tr /><td />
+    <!-- Buttons -->
+      <button onclick="ausgabeWerte()">Berechnen</button>
+    <td />
+      <button onclick="clearfields()">Clear</button>
+  </table>
+  <!-- Scripteinbindung -->
+    <script src="script\script.js"></script>
+</body>
+</html>
