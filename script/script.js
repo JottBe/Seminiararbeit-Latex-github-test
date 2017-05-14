@@ -4,10 +4,12 @@ function berechnenWartRent(pws, ptver, kt) {
   ptver = document.getElementById('verbrauchteTage').value;
   kt = document.getElementById('tagessatz').value;
 //Pruefung Zahlenwerte
-if (kt==0) {
-  alert('Fehler. Zahlenwert Tagessatz darf nicht 0 betragen!')
-} else if (ptver==0) {
-  alert('Fehler. Zahlenwert verbrauchte Tage darf nicht 0 betragen')
+if (kt==="0") {
+  alert('Fehler. Zahlenwert Tagessatz darf nicht 0 betragen!');
+  exit();
+} else if (ptver==="0") {
+  alert('Fehler. Zahlenwert verbrauchte Tage darf nicht 0 betragen');
+  exit();
 } else {
   //Berechnung der Werte
   ergebnis = pws/3/ptver/kt;

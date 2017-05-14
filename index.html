@@ -11,29 +11,43 @@
       <p>Wartungssumme:</p>
     <td />
       <input type="text" id="wartungssumme"/>
+    <td />
+      <p name="meldung"></p>
     <tr /><td />
       <p>Verbrauchte Tage:</p>
     <td />
       <input type="text" id="verbrauchteTage"/>
+    <td />
+        <p name="meldung"></p>
     <tr /><td />
       <p>Tagessatz:</p>
     <td />
       <input type="text" id="tagessatz"/>
+    <td />
+      <p name="meldung"></p>
     <!-- Ausgabebereich -->
     <tr /><td />
       <p>Ergebnis PS:</p>
     <td />
-      <input type="text" id="ergebnis" value=""/>
+      <p id="ergebnis"></p>
     <td />
       <p id="meldung"></p>
     <tr /><td />
-      <p>Ergebnis Gesamt</p>
+      <p>Ergebnis Gesamt:</p>
     <td />
-      <input type="text" id="ergebnisGesamt" value=""/>
+      <p id="ergebnisGesamt"></p>
     <td />
     <p id="meldungGesamt"></p>
     <tr /><td />
+      <p>Maximaler Verbrauch in PT:</p>
+    <td />
+      <p id="maxWert"></p>
+    <tr /><td />
+      <p>Maximaler Verbrauch in PT fuer PS:</p>
+    <td />
+      <p id="maxWertPS"></p>
     <!-- Buttons -->
+    <tr /><td />
       <button onclick="ausgabeWerte()">Berechnen</button>
     <td />
       <button onclick="clearfields()">Clear</button>
